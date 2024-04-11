@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <section class="banner">
+      <img
+        src="https://picsum.photos/id/211/1440/500"
+        alt=""
+        class="banner__img"
+      />
+    </section>
+    <!--End.banner-->
+
+    <!-- Cart -->
+    <div class="p-8 lg:p-20 flex flex-col lg:flex-row gap-8 set-cart">
+      <div class="w-full lg:w-9/12 overflow-x-auto sett">
+        <div
+          class="grid min-w-[750px] grid-cols-8 overflow-x-auto bg-[#F9F1E7] py-5 font-medium mb-6"
+        >
+          <span></span><span class="text-center">Product</span>
+          <span class="text-center">Price</span
+          ><span class="text-center">Quantity</span
+          ><span class="text-center">Subtotal</span><span></span>
+        </div>
+        <div class="flex w-full flex-col gap-6">
+          <div class="grid min-w-[750px] w-full grid-cols-8">
+            <div class="">
+              <div
+                class="bg-[#F9F1E7] overflow-hidden max-w-32 h-32 flex items-center rounded-xl"
+              >
+                <img
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                  src="https://picsum.photos/id/201/300/300"
+                  alt="Asgaard sofa_img"
+                />
+              </div>
+            </div>
+            <div class="text-[#9F9F9F] flex items-center justify-center">
+              <a href="/products/1">Asgaard sofa</a>
+            </div>
+            <div class="text-[#9F9F9F] flex items-center justify-center">
+              <p>25.000.000đ</p>
+            </div>
+            <div class="flex items-center justify-center">
+              <span
+                class="border border-[#9F9F9F] flex items-center justify-center rounded w-10 h-10 p-4"
+                >1</span
+              >
+            </div>
+            <div class="flex items-center justify-center">
+              <p>25.000.000đ</p>
+            </div>
+            <div class="text-ochre text-2xl flex items-center justify-center">
+              <button>
+                <img
+                  src="data:image/png;base64,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"
+                  alt="trash"
+                  width="21px"
+                  height="21px"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full max-h-[36vh] xl:max-h-[40vh] lg:w-3/12 bg-[#F9F1E7] text-center pt-4 px-4 xl:px-10 pb-14"
+      >
+        <p class="font-semibold text-2xl xl:text-3xl mb-6 xl:mb-10">
+          Cart Totals
+        </p>
+        <div class="flex flex-col gap-4 mb-10 xl:mb-14">
+          <div class="flex gap-10 justify-between">
+            <span class="font-medium">Subtotal</span
+            ><span class="text-[#9F9F9F]">25.000.000đ</span>
+          </div>
+          <div class="flex gap-10 justify-between">
+            <span class="font-medium">Total</span
+            ><span class="text-ochre text-xl">25.000.000đ</span>
+          </div>
+        </div>
+        <a
+          class="font-xl border border-black hover:bg-black hover:text-white duration-300 px-10 py-2 rounded-xl"
+          href="/checkout"
+          >Check Out</a
+        >
+      </div>
+    </div>
+    <!-- End cart -->
+
+    <!-- Service -->
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+        </div>
+      </div>
+    </section>
+    <!--End .services-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="index.html" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>

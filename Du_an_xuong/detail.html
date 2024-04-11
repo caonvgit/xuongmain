@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="index.html" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="#" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Tab -->
+    <div class="tab">
+      <a class="tab-item" href="index.html">Home </a>
+      <span class="tabb">></span>
+      <a class="tab-item" href="shop.html">Shop </a>
+      <span class="tabb">></span>
+      <span class="tabbs">|</span>
+      <span class="text-black"> Asgaard sofa</span>
+    </div>
+    <!-- end tab -->
+
+    <!--  Detail  -->
+    <div
+      class="p-8 lg:px-20 lg:py-10 flex flex-col lg:flex-row gap-10 sm:gap-20"
+    >
+      <div class="flex flex-col sm:flex-row w-full lg:w-1/2 gap-4 sm:gap-10">
+        <div
+          class="grid grid-cols-4 sm:flex sm:flex-col gap-2 sm:gap-6 w-full sm:w-2/12"
+        >
+          <img
+            loading="lazy"
+            class="bg-[#F9F1E7] object-cover h-16 sm:h-24 w-full sm:w-24 rounded-lg sm:rounded-xl"
+            src="https://picsum.photos/id/201/300/300"
+            alt="sofa"
+          /><img
+            loading="lazy"
+            class="bg-[#F9F1E7] object-cover h-16 sm:h-24 w-full sm:w-24 rounded-lg sm:rounded-xl"
+            src="https://picsum.photos/id/201/300/300"
+            alt="sofa"
+          /><img
+            loading="lazy"
+            class="bg-[#F9F1E7] object-cover h-16 sm:h-24 w-full sm:w-24 rounded-lg sm:rounded-xl"
+            src="https://picsum.photos/id/201/300/300"
+            alt="sofa"
+          /><img
+            loading="lazy"
+            class="bg-[#F9F1E7] object-cover h-16 sm:h-24 w-full sm:w-24 rounded-lg sm:rounded-xl"
+            src="https://picsum.photos/id/201/300/300"
+            alt="sofa"
+          />
+        </div>
+        <img
+          loading="lazy"
+          class="bg-[#F9F1E7] order-first sm:order-last w-full sm:w-9/12 object-cover rounded-lg sm:rounded-xl h-[50vh] sm:h-[70vh]"
+          src="https://picsum.photos/id/201/300/300"
+          alt="Asgaard sofa_image"
+        />
+      </div>
+      <div class="w-full lg:w-1/2 flex flex-col gap-5">
+        <h3 class="text-[42px]">Asgaard sofa</h3>
+        <p class="text-[#9F9F9F] text-2xl">25.000.000đ</p>
+        <div class="flex gap-3">
+          <img
+            loading="lazy"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAAUCAYAAABPuVmJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAICSURBVHgB7ZrNTcNAEIWf4xzgFirAVEC48XMxHaQDoIN0kKQCRAfpADqIJSQscaEFqIAcOHCALDNrizh2sNdjGw7Mk9b2OjPzrbRr7+w6gEqVl4kRmnuE6FjKEXMCV9u+o90ktYzQrZQj5QBXaEN2lMYwtnQ4WpUj5gTMcLXvOdhMvq/6mev2pZymHAeVdjiPUjqFmVudzEnKEXMCOl3WcKl8woujp5vRqpy2OBXy+GAeMMKKRksf+1QNbOG6h8FWL4MlDZVnukrKB1647p3irgymnPoc80Sx3qkYDG1sH4c2Ptexzs69k6Qvq5TkkBzAx/XG1F/mvgYObd23x+osUTm1Od4RlvTqHpPvJLWHe4pWlH2l0+iY02kGqVaYpTFKpRwxZ9qIk1GvcVBu9Jn1dZJyfpmTj5O/QfPSnO5ewEUGNzT/jCGQcoSc2HZ8IVlzncO3GlHjX39MPNaeS+8Ye2gg5Qg5MRbYXPY5d3hhWWYW1OCqRltDDGwGKZRy/kbFdfhOmkG66K2GrXLa4bCM3L/XKJjfoOHKkWEeyTf/JuH1vaO27bQFuXpE5TwtUYVtHQXKEegz09lJR8+wiwNX9+LnUY92chJFHIySgSjza5TuE3OWGGZs60s5Mq3Inx9TyvSpo6e8MYMmokzzNm1cuR1//iNbCKUcMWdU5w8Pqn+uLxkZbCO6bMKVAAAAAElFTkSuQmCC"
+            alt="stars"
+          /><span class="w-[1px] bg-[#9F9F9F]"></span
+          ><span class="text-sm text-[#9F9F9F]">5 Customer Review</span>
+        </div>
+        <p class="w-10/12">
+          Setting the bar as one of the loudest speakers in its class, the
+          Kilburn is a compact, stout-hearted hero with a well-balanced audio
+          which boasts a clear midrange and extended highs for a sound.
+        </p>
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <span class="text-black text-sm">Size</span>
+            <div class="flex gap-4 text-xs">
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="size_page"
+                  id="S"
+                  value="S"
+                  checked=""
+                /><label
+                  class="bg-[#F9F1E7] cursor-pointer h-8 w-8 flex items-center justify-center rounded peer-checked:bg-ochre peer-checked:text-white duration-300"
+                  for="S"
+                  >L</label
+                >
+              </div>
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="size_page"
+                  id="M"
+                  value="M"
+                /><label
+                  class="bg-[#F9F1E7] cursor-pointer h-8 w-8 flex items-center justify-center rounded peer-checked:bg-ochre peer-checked:text-white duration-300"
+                  for="M"
+                  >XL</label
+                >
+              </div>
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="size_page"
+                  id="L"
+                  value="L"
+                /><label
+                  class="bg-[#F9F1E7] cursor-pointer h-8 w-8 flex items-center justify-center rounded peer-checked:bg-ochre peer-checked:text-white duration-300"
+                  for="L"
+                  >XS</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-black text-sm">Color</span>
+            <div class="flex gap-4 items-center">
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="color_page"
+                  id="blue"
+                  value="blue"
+                  checked=""
+                /><label
+                  class="bg-[#816DFA] cursor-pointer block h-8 w-8 rounded-full peer-checked:border-4 peer-checked:border-gray-400 peer-checked:shadow-md duration-300"
+                  for="blue"
+                ></label>
+              </div>
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="color_page"
+                  id="black"
+                  value="black"
+                /><label
+                  class="bg-black cursor-pointer block h-8 w-8 rounded-full peer-checked:border-4 peer-checked:border-gray-400 peer-checked:shadow-md duration-300"
+                  for="black"
+                ></label>
+              </div>
+              <div class="">
+                <input
+                  class="peer sr-only"
+                  type="radio"
+                  name="color_page"
+                  id="ochre"
+                  value="ochre"
+                /><label
+                  class="bg-ochre cursor-pointer block h-8 w-8 rounded-full peer-checked:border-4 peer-checked:border-gray-400 peer-checked:shadow-md duration-300"
+                  for="ochre"
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row w-full gap-4">
+            <div
+              class="rounded-lg flex justify-between items-center p-3 border border-[#9F9F9F]"
+            >
+              <button
+                class="hover:bg-gray-300 duration-300 rounded-full w-5 h-5 flex items-center justify-center"
+              >
+                -</button
+              ><span>1</span
+              ><button
+                class="hover:bg-gray-300 duration-300 rounded-full w-5 h-5 flex items-center justify-center"
+              >
+                +
+              </button>
+            </div>
+            <button
+              class="rounded-lg disabled:opacity-50 disabled:bg-black disabled:text-white text-xl p-3 border border-black hover:bg-black hover:text-white duration-300"
+            >
+              Add To Cart
+            </button>
+            <button
+              class="rounded-lg disabled:opacity-50 disabled:bg-black disabled:text-white text-xl p-3 border border-black hover:bg-black hover:text-white duration-300"
+            >
+              + Compare
+            </button>
+          </div>
+        </div>
+        <span class="h-[1px] bg-[#D9D9D9] my-8"></span>
+        <div class="text-[#9F9F9F] flex flex-col gap-4">
+          <div class="flex gap-3">
+            <span class="w-20">SKU</span><span>:</span><span>SS001</span>
+          </div>
+          <div class="flex gap-3">
+            <span class="w-20">Category</span><span>:</span><span>Sofas</span>
+          </div>
+          <div class="flex gap-3">
+            <span class="w-20">Tags</span><span>:</span
+            ><span>Sofa, Chair, Home, Shop</span>
+          </div>
+          <div class="flex gap-3">
+            <span class="w-20">Share</span><span>:</span>
+            <div class="text-black flex gap-4 text-2xl">
+              <a href="#"
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAC9vb1SUlKlpaXBwcHLy8v19fUfHx/ExMT8/Pzb29v6+vqWlpazs7OhoaFkZGTX19c3NzctLS1GRkZvb29hYWF1dXWqqqpBQUHm5uaDg4NoaGiYmJjKysp6enomJiZYWFgQEBDt7e0aGhozMzOBgYGMjIzkF8bvAAAE3klEQVR4nO2ca3faOhBFMZA4mHd4xoGEJr3l///DewlJQ2tJo2MJjbjr7K8tWtqxLc2Mxu50CCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCiAZVPZiMn1ez9Xq22xz3k5d6pD2liMz7r49Fk8VqO9SeWgTeJ2uD3DezSak9xRDKSc+pd6Y3qbQn2pL5ykPvzOYWb9fBk7ffieWL9oRBBgfI78RioD1pgDl2/b54upV7deT//P3N5iY2yUlrvxNd7emLVLMgwaLYZb513Af6nZhrS7iYRhAsiq22hp1NFMGieNUWseETovnxQ1vFSLmIJlgUjxluG+VDRMGiOGSnOMLDNDeLzHaNKuYteuZR2+lPltEFM1tu2keiLjLaNOJs9E2y2fpbhGq76Uv9XlZVWQ9fJuONLdvKJIArUb1Xw8TrwZvhf77lsaD+wPzGlp3OuJ+u0qqYwfLBtbV4aI4YMsgXsXt0ah/IEhPpxzZQxuu6IhbDTTITC9A6OnGNZItrtctTSLT2yzmSzXCZyMRCFxB8cA9lzU10a8U/AcN791BWQ9UQHLmEUiBtzy+FP81VQZ5CaZ52Q8UnEVlID9JgjhqB3nLqPvz8k7E0mMNQbU+EwhkxTXDVebQCGygiNU+ymne3/TOm3OILZ6hwRZD6qHHJr31rA73UamfeAUHjo7T1//l7crsT0E26D/u9zm0KZRXNkgu0Tu0U/DodZIaGi7CHfq/g1xlCM2xmhthZv8amD6wTRkPo5yqFReywsGEIVug0qsPYSUWo4T/pBUfYDEMNi/SVU2yhCTeskxsOEhumr2VgS2m4YfqoZpzY0BD2XZnnxIbH5IbgoWiwYfo8H+xfCzZMH3sjNZoYhrP8DJ+/yhMnpo3IeTTtX7KVCgbr/AzBOm5+huJzCBpKw6V/DsW1FDMUiz7pz7t/xTUUy+fPV/KwI8Y0mGFfGk6smUdHjEsxQzGfTp/k38U1FKs26d83EfNDyLCSRlMoRYkxCWRYi4YKhzNSyyxkKObTi2tpONjFNBTLwxrtX1LLJWQo/bmK/rU0HMxjGopd4hp9mNLyhxjKpcmrabgQsgHEUNx6dI5IhUBrP7j7pts44ry/+NfBUTLUeAx99rALGjk+1t2fvh78AXJy0TCEXpJSOLX4AGnRDzN0NN5eFaRVIcxQp1EBm2WQoVKzSQc6nQkyVHxT37+9NMTwp4baJ/4HUCGGOpvhJ0kMNcR+IxaQIhhqbRWfuDoKIxlqaF0gFqSCDbU6L3/jGV+2NtR/WdYz/m5tqP3KTMf3QL+tYfpivgHTl8piGWpu9t943actDTO4R0/4RDbtDNO3mFjwaFNsZZj+3NeK/Ci2MXzI4z3nD0oxtGljqFScMSOuNi0MM3kZ/wup4okbZvcRPkERNrzTkHDjVkQNMxT871l0LTegoeZrow5Kx6aBGWYSyhiwtxEhho85f5bWGsABhll87cNObTnM8DdUz+lFzCdlvoZLtQI+wNDU/eNpmM13kwQM7056Ga5yXmL+onHw5mHYy3ePMFFN3zDDXmaBtg/dpb/h7gb9TtTjg4/hYX8LC6iN4fTJbfhwvNHLd0F5v5+ZDd9226zy+CAaJZfjuPv/sSOEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCLkl/gUBXju9y5fqTgAAAABJRU5ErkJggg=="
+                  alt="facebook"
+                  width="20px"
+                  height="20px" /></a
+              ><a href="#"
+                ><img
+                  src="data:image/png;base64,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"
+                  alt="linkedin"
+                  width="20px"
+                  height="20px" /></a
+              ><a href="#"
+                ><img
+                  src="data:image/png;base64,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"
+                  alt="twitter"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End detail -->
+
+    <!-- Description -->
+    <div
+      class="border-y flex flex-col gap-12 border-y-[#D9D9D9] text-[#9F9F9F] p-8 lg:py-14 lg:px-20"
+    >
+      <div
+        class="text-xl md:text-2xl flex-wrap flex w-full gap-4 justify-center md:gap-10"
+      >
+        <button class="text-black font-medium duration-300">Description</button
+        ><button class="duration-300">Additional Information</button
+        ><button class="duration-300">Reviews [5]</button>
+      </div>
+      <div class="md:px-10">
+        <div class="flex flex-col gap-6">
+          <p>
+            Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+            portable active stereo speaker takes the unmistakable look and sound
+            of Marshall, unplugs the chords, and takes the show on the road.
+          </p>
+          <p>
+            Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+            vintage styled engineering. Setting the bar as one of the loudest
+            speakers in its class, the Kilburn is a compact, stout-hearted hero
+            with a well-balanced audio which boasts a clear midrange and
+            extended highs for a sound that is both articulate and pronounced.
+            The analogue knobs allow you to fine tune the controls to your
+            personal preferences while the guitar-influenced leather strap
+            enables easy and stylish travel.
+          </p>
+        </div>
+        <div class="img-des">
+          <img src="https://picsum.photos/id/201/605/348" alt="" />
+          <img src="https://picsum.photos/id/201/605/348" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End description -->
+
+    <!-- Relate product -->
+    <section class="news">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-heading__title">Related Products</h2>
+        </div>
+        <div class="section-body">
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/201/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-sale">30%</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/201/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+                <span class="product-new">New</span>
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/201/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">$200</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+            <div class="product-item">
+              <div class="product-image">
+                <img
+                  src="https://picsum.photos/id/201/300/300"
+                  alt=""
+                  class="product__thumbnail"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product__name">
+                  <a href="" class="product__link">Syltherine</a>
+                </h3>
+                <a href="" class="product__category">Stylish cafe chair</a>
+                <div class="product-price">
+                  <span class="product-price__new">500.000</span>
+                  <span class="product-price__old">$300</span>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button class="btn product-action__quickview">
+                  Quick View
+                </button>
+                <button class="btn product-action__addtocart">
+                  Add To Cart
+                </button>
+                <div class="product-actions-more">
+                  <span class="product-action__share">Share</span>
+                  <span class="product-action__compare">Compare</span>
+                  <span class="product-action__like">Like</span>
+                </div>
+              </div>
+            </div>
+            <!--End .product-item-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container"></div>
+    <!--End .news-->
+    <!-- End relateproduct -->
+
+    <!-- Showmore -->
+    <div class="show">
+      <button class="show-text">Show More</button>
+    </div>
+    <!-- End showmore -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="index.html" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>
